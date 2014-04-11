@@ -14,6 +14,14 @@ body {
   min-width: 320px;
 }
 
+.ui.animated.list a{
+  color:#00b5ad;
+}
+
+.ui.inverted.link.animated.list a{
+  font-size:0.8rem;
+}
+
 
 
 .ui.header {
@@ -24,6 +32,10 @@ body {
 h1,
 h2 {
   font-weight: normal !important;
+}
+
+h3{
+  margin:0;
 }
 
 h1.ui.header {

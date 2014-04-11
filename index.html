@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="packaged/css/semantic.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 
+  <script type="text/javascript" src="livechat.js"></script>
   <script src="jquery-1.11.0.min.js"></script>
   <script src="packaged/javascript/semantic.js"></script>
   <script src="index.js"></script>
@@ -29,56 +30,81 @@
   <div class="ui inverted teal page grid masthead segment">
     <div class="column">
       <div class="inverted secondary pointing ui menu">
-        <div class="header item">Crushing Techs</div>
+        <div class="header item">MINING TECHS</div>
         <div class="right menu">
 
           <div class="ui dropdown link item">
             CRUSHERS
             <i class="dropdown icon"></i>
             <div class="menu">
-              <a class="item">Jaw Crusher</a>
-              <a class="item">Cone Crusher</a>
-              <a class="item">Hammer Crusher</a>
+              <a class="item" href="crushers/hammer-crusher.html">Hammer Crusher</a>
+              <a class="item" href="crushers/hcs.html">HCS Cone Crusher</a>
+              <a class="item" href="crushers/pew.html">PEW Jaw Crusher</a>
+              <a class="item" href="crushers/pf.html">PF Impact Crusher</a>
+              <a class="item" href="crushers/pfw.html">PFW Impact Crusher</a>
+              <a class="item" href="crushers/jaw-crusher.html">Jaw Crusher</a>
+              <a class="item" href="crushers/toggle-jaw-crusher.html">Single Toggle Jaw Crusher</a>
+              <a class="item" href="crushers/vsi.html">VSI Crusher</a>
             </div>
           </div>
                     <div class="ui dropdown link item">
             GRINDINGS
             <i class="dropdown icon"></i>
             <div class="menu">
-              <a class="item">Vertical Grinding Mills</a>
-              <a class="item">Ball Mill</a>
-              <a class="item">Raymond Mill</a>
+              <a class="item" href="grinder/ball-mill.html">Ball Mill</a>
+              <a class="item" href="grinder/powder.html">Powder Grinding Mill</a>
+              <a class="item" href="grinder/iron-mill.html">Iron Grinding Mill</a>
+              <a class="item" href="grinder/high-pressure.html">High Pressure Grinding Mill</a>
+              <a class="item" href="grinder/lm.html">LM Vertical Mill</a>
+              <a class="item" href="grinder/mtm.html">MTM Medium Speed Trapezium Mill</a>
+              <a class="item" href="grinder/ultrafine-mill.html">XZN Ultrafine Mill</a>
             </div>
           </div>
          <div class="ui dropdown link item">
             PRODUCTION LINE
             <i class="dropdown icon"></i>
             <div class="menu">
-              <a class="item">Iron Ore Processing Plant</a>
-              <a class="item">Sand Making Plant</a>
-              <a class="item">Construction Recycle Plant</a>
+              <a class="item" href="production-line/mobile-crushing.html">Mobile Crushing Plant</a>
+              <a class="item" href="production-line/stone-crusher-plant.html">Stone Crusher Plant</a>
+              <a class="item" href="production-line/aggregate-crushing.html">Aggregate Crushing Plant Price</a>
+              <a class="item" href="production-line/portable-screening.html">Portable Crushing Screening</a>
+              <a class="item" href="production-line/small-rock.html">Small Rock Crusher Supplier</a>
+              <a class="item" href="production-line/standard.html">Standard operating of Crushing Plant</a>
+              <a class="item" href="production-line/stone-unit.html">Stone Crusher Unit Plant</a>
+              <a class="item" href="production-line/tire.html">Tire Type Mobile Crusher</a>
             </div>
           </div>
                     <div class="ui dropdown link item">
             BENEFICIATION
             <i class="dropdown icon"></i>
             <div class="menu">
-              <a class="item">Flotation Machine</a>
-              <a class="item">Spiral Classifier</a>
+              <a class="item" href="beneficiation/combined-separator.html">Combined Separator for Sale</a>
+              <a class="item" href="beneficiation/feeder.html">Design parameters of apron feeder</a>
+              <a class="item" href="beneficiation/magnetic-separator.html">Double Roller type Magnetic Separator</a>
+              <a class="item" href="beneficiation/dry-separator.html">Dry Magnetic Separator</a>
+              <a class="item" href="beneficiation/belt-conveyor.html">High Roller Belt Conveyor</a>
+              <a class="item" href="beneficiation/flotation-machine.html">Flotation Machine</a>
+              <a class="item" href="beneficiation/sand-washing.html">LSX Sand Washing Machine</a>
+              <a class="item" href="beneficiation/jigger.html">Sawtooth Wave Jigger</a>
+              <a class="item" href="beneficiation/concentrator.html">Shaking Table Concentrator</a>
+              <a class="item" href="beneficiation/spiral-chute.html">Spiral Chute</a>
+              <a class="item" href="beneficiation/xjk.html">XJK Flotation Machine</a>
+              <a class="item" href="beneficiation/xsd.html">XSD Sand Washing Machine</a>
+              <a class="item" href="beneficiation/yk.html">Vibrating Screen</a>
             </div>
           </div>
-                    <div class="ui dropdown link item">
+                    <a class="ui dropdown link item" href="about.html">
             ABOUT
-          </div>
-                    <div class="ui dropdown link item">
+          </a>
+                    <a class="ui dropdown link item" href="contact.html">
             CONTACT
-          </div>
+          </a>
         </div>
       </div>
     </div>
   </div>
 
-    <a class="ui teal huge launch right attached button" style="width: 70px;position:fixed;margin-top:2em;z-index:100;" href="#">
+    <a class="ui teal huge launch right attached button" style="width: 70px;position:fixed;margin-top:2em;z-index:100;" onclick='openZoosUrl()' class="myClick">
     <i class="chat icon"></i>
     <span class="text" style="display: none;">联系我们</span>
   </a>
@@ -108,7 +134,7 @@
           <div class="field">
             <div class="ui left icon action input">
               <i class="user icon"></i>
-              <a class="ui teal submit button">Get Our Amazing Offers</a>
+              <a class="ui teal submit button myClick" onclick='openZoosUrl()'>Get Our Amazing Offers</a>
             </div>
           </div>
           <div class="ui error message"></div>
@@ -255,7 +281,7 @@
             Contact
           </div>
           <p>Need Some Help ? Contact us, enjoy the services, we will help you to get through</p>
-          <p><a class="ui teal right labeled icon button" href="#">CONTACT <i class="right long arrow icon"></i></a></p>
+          <p><a class="ui teal right labeled icon button myClick" onclick='openZoosUrl()'>CONTACT <i class="right long arrow icon"></i></a></p>
         </div>
         <div class="column">
           <div class="ui icon header">
@@ -263,7 +289,7 @@
             Offers
           </div>
           <p>Get Amazing offers on your information from us.</p>
-          <p><a class="ui teal right labeled icon button" href="#">OFFERS <i class="right long arrow icon"></i></a></p>
+          <p><a class="ui teal right labeled icon button myClick" onclick='openZoosUrl()'>OFFERS <i class="right long arrow icon"></i></a></p>
         </div>
       </div>
     </div>
@@ -277,30 +303,39 @@
       <div class="ui three column stackable grid">
         <div class="column">
           <div class="ui header">Total Solution</div>
-          <div class="ui inverted link list">
-            <a class="item">Mineral Ore Plant</a>
-            <a class="item">Sand Making Plant</a>
-            <a class="item">Sand Making Plant</a>
+          <div class="ui inverted link animated list">
+            <a class="item" href="solution/10-1000tph-crushing-machine-cost.html">10-1000 TPH crushing machine cost</a>
+            <a class="item" href="solution/250tph-cement-ball-mill-for-sale.html">250 TPH cement ball mill for sale</a>
+            <a class="item" href="solution/a-basic-ultra-fine-grinding-mill.html">a basic ultra fine grinding mill</a>
+            <a class="item" href="solution/aggregate-crushing-screening-plant.html">aggregate crushing screening plant</a>
+            <a class="item" href="solution/artificial-sand-making-plant-in-tamilnadu.html">artificial sand making plant in Tamilnadu</a>
           </div>
         </div>
         <div class="column">
           <div class="ui header">Project Case</div>
-          <div class="ui inverted link list">
-            <a class="item">Andesite Crushing Plant In Indonesia</a>
-            <a class="item">Andesite Crushing Plant In Indonesia</a>
+          <div class="ui inverted link animated list">
+            <a class="item" href="projects/500-mesh-bentonite-crusher-technology.html">500 mesh bentonite crusher technology</a>
+            <a class="item" href="projects/blue-metal-crusher-in-germany.html">blue metal crusher machine in Germany</a>
+            <a class="item" href="projects/cement-factory-for-sale-in-south-africa.html">cement factory for sale in South Africa</a>
+            <a class="item" href="projects/clinker-processing-plant-200-tpd.html">clinker processing plant layout 200 tpd</a>
+            <a class="item" href="projects/iron-ore-crusher-specifications.html">iron ore crusher specifications</a>
           </div>
         </div>
         <div class="column">
           <div class="ui header">Techonology</div>
-          <div class="ui inverted link list">
-            <a class="item">Construction Recycle Plant</a>
+          <div class="ui inverted link animated list">
+            <a class="item" href="projects/equipment-of-sand-maker-from-gravel.html">equipment of sand maker from gravel</a>
+            <a class="item" href="projects/hammer-crusher-in-south-africa.html">hammer crusher in South Africa</a>
+            <a class="item" href="projects/how-to-install-a-sand-dryer.html">how to install a sand dryer</a>
+            <a class="item" href="projects/kaoline-equipment-in-benificiation-processing.html">kaoline equipment in benificiation processing</a>
+            <a class="item" href="projects/working-principle-of-coal-handling-plant.html">working principle of coal handling plant</a>
           </div>
         </div>
       </div>
     </div>
     <div class="six wide right floated aligned column">
-      <a class="ui green button" href="#">Contact Us</a>
-      <p>Copyright © 2007-2014 CrushingTech</p>
+      <a class="ui green button myClick" onclick='openZoosUrl()'>Contact Us</a>
+      <p>Copyright © 2007-2014 MiningTech</p>
       <p style="font-size:0.7rem;">Confidentiality of customers' information is our utmost concern</p>
     </div>
   </div>
